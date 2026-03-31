@@ -12,7 +12,7 @@ export default function Home() {
       {/* ===== 배경 이미지 ===== */}
       <div className={styles.bgImage}>
         <Image
-          src={expanded ? "/images/bg-expanded.png" : "/images/bg-collapsed.png"}
+          src={expanded ? "/images/bg-expanded.webp" : "/images/bg-collapsed.webp"}
           alt=""
           fill
           sizes="100vw"
@@ -123,7 +123,7 @@ export default function Home() {
           />
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/images/noise-bottom.png"
+            src="/images/noise-bottom.webp"
             alt=""
             className={styles.illustNoiseImg}
           />
