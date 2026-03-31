@@ -530,15 +530,8 @@
     display: none;
   }
 
-  /* 스크롤 버튼 */
+  /* 스크롤 버튼 숨기기 */
   .scrollBtns {
-    right: 3vw;
-    bottom: 3vw;
-  }
-
-  .scrollBtn {
-    width: 8vw;
-    height: 8vw;
-    border-radius: 1.5vw;
+    display: none;
   }
 }
