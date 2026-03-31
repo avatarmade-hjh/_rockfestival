@@ -361,6 +361,7 @@
   color: #FFFFFF;
   margin-top: 1.9vw;
   padding: 0 1.56vw;
+  word-break: keep-all;
 }
 
 
