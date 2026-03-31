@@ -154,7 +154,7 @@ export default function Home() {
             <div className={styles.brandCard}>
               <div className={styles.brandName}>두드레스</div>
               <div className={styles.brandDesc}>
-                지속가능성을 추구하는 라이프&amp;스타일 기반 IP 콜라보레이션 플랫폼
+                지속가능성을 추구하는<br />라이프&amp;스타일 기반<br />IP 콜라보레이션 플랫폼
               </div>
             </div>
             <div className={styles.brandCard}>
