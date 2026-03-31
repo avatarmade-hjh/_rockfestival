@@ -438,11 +438,13 @@
     margin: 37.9vw auto 0;
   }
 
-  /* 메인 타이틀 */
+  /* 메인 타이틀 - 50px, Medium, 행간 65.47px, 자간 5% */
   .mainTitle {
     margin-top: 4.8vw;
-    font-size: 8.5vw;
-    line-height: 10.8vw;
+    font-weight: 500;
+    font-size: 6.52vw;
+    line-height: 8.54vw;
+    letter-spacing: 0.05em;
   }
 
   /* 서브 타이틀 */
@@ -450,38 +452,45 @@
     margin-top: 32.2vw;
   }
 
+  /* Bold 34px, 행간 100%, 자간 -2% */
   .subTitleBold {
-    font-size: 4.2vw;
-    line-height: 5.0vw;
+    font-size: 4.43vw;
+    line-height: 4.43vw;
+    letter-spacing: -0.02em;
   }
 
+  /* Regular 34px, 행간 100%, 자간 0% */
   .subTitleLight {
-    font-size: 4.2vw;
-    line-height: 5.0vw;
+    font-size: 4.43vw;
+    line-height: 4.43vw;
     margin-top: 1.7vw;
+    letter-spacing: 0;
   }
 
-  /* Rock Saves Trees */
+  /* Rock Saves Trees - Rock Salt, 58px, 행간 57.85px, 자간 -2% */
   .rockSavesTrees {
     width: 82.3vw;
-    height: 7.6vw;
+    height: 7.56vw;
     margin: 33.9vw auto 0;
-    font-size: 6.3vw;
-    line-height: 7.6vw;
+    font-size: 7.56vw;
+    line-height: 7.54vw;
+    letter-spacing: -0.02em;
   }
 
-  /* Just Enjoy a Moment */
+  /* Just Enjoy a Moment - Bold 42px, 행간 100%, 자간 0% */
   .enjoyMoment {
     margin-top: 5.5vw;
-    font-size: 5.0vw;
-    line-height: 6.1vw;
+    font-size: 5.47vw;
+    line-height: 5.47vw;
+    letter-spacing: 0;
   }
 
-  /* 설명 텍스트 */
+  /* 설명 텍스트 - Regular 36px, 행간 57.1px, 자간 0% */
   .descriptionText {
     margin-top: 35.2vw;
-    font-size: 3.8vw;
-    line-height: 7.4vw;
+    font-size: 4.69vw;
+    line-height: 7.44vw;
+    letter-spacing: 0;
   }
 
   /* CTA 버튼 */
