@@ -1,0 +1,31 @@
+services:
+  nextjs:
+    build:
+      context: ./app
+      dockerfile: Dockerfile
+    image: hjh_rockfestival-app
+    container_name: hjh_rockfestival-app
+    restart: unless-stopped
+    expose:
+      - "3000"
+    networks:
+      - webnet
+
+  nginx:
+    image: nginx:alpine
+    container_name: hjh_rockfestival-nginx
+    restart: unless-stopped
+    ports:
+      - "4020:80"
+      # - "443:443"  # SSL 사용 시 활성화
+    volumes:
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
+      # - ./nginx/certs:/etc/letsencrypt:ro  # SSL 인증서
+    depends_on:
+      - nextjs
+    networks:
+      - webnet
+
+networks:
+  webnet:
+    driver: bridge

@@ -1,0 +1,409 @@
+/* ===== 메인 컨테이너 ===== */
+.landing {
+  position: relative;
+  width: 100%;
+  height: 260.4vw;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.landingExpanded {
+  height: 430.3vw;
+}
+
+/* ===== 배경 이미지 ===== */
+.bgImage {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 0;
+}
+
+/* ===== 콘텐츠 ===== */
+.content {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+}
+
+/* 키비주얼 */
+.headCopy {
+  position: relative;
+  width: 64.6vw;
+  height: 40.4vw;
+  margin-top: 13.125vw;
+  margin-left: 17.7vw;
+}
+
+.kvImg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  height: auto;
+  max-width: 64.6vw;
+}
+
+/* 3개 카드 (삼각형 이미지) */
+.cardsSection {
+  position: relative;
+  width: 43.9vw;
+  margin: 24.2vw auto 0;
+}
+
+.trianglesImg {
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0px 0.2vw 0.3vw rgba(140, 255, 0, 0.5));
+}
+
+/* 메인 타이틀 */
+.mainTitle {
+  margin-top: 4.2vw;
+  font-weight: 500;
+  font-size: 5.2vw;
+  line-height: 6.67vw;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #8CFF00;
+}
+
+/* 서브 타이틀 */
+.subTitles {
+  margin-top: 21vw;
+  text-align: center;
+}
+
+.subTitleBold {
+  font-weight: 700;
+  font-size: 2.08vw;
+  line-height: 2.34vw;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+}
+
+.subTitleLight {
+  font-weight: 400;
+  font-size: 2.08vw;
+  line-height: 2.34vw;
+  color: #FFFFFF;
+  margin-top: 0.73vw;
+}
+
+/* Rock Saves Trees */
+.rockSavesTrees {
+  width: 72.5vw;
+  height: 7.08vw;
+  margin: 14.6vw auto 0;
+  font-family: var(--font-rock-salt), cursive;
+  font-size: 6.67vw;
+  line-height: 7.08vw;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #8CFF00;
+  white-space: nowrap;
+}
+
+/* Just Enjoy a Moment */
+.enjoyMoment {
+  margin-top: 15.1vw;
+  font-weight: 700;
+  font-size: 3.8vw;
+  line-height: 4.27vw;
+  text-align: center;
+  color: #EBFFD1;
+}
+
+/* 설명 텍스트 */
+.descriptionText {
+  margin-top: 12.5vw;
+  font-weight: 400;
+  font-size: 1.875vw;
+  line-height: 3.02vw;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+/* CTA 버튼 */
+.ctaBtn {
+  display: flex;
+  width: 37.5vw;
+  height: 6.25vw;
+  margin: 15vw auto 0;
+  background: #8CFF00;
+  box-shadow: 0px 0.3vw 0.8vw 0.26vw rgba(140, 255, 0, 0.4);
+  border-radius: 4vw;
+  border: none;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+  text-decoration: none;
+  transition: box-shadow 0.3s, transform 0.2s;
+}
+
+.ctaBtn:hover {
+  box-shadow: 0px 0.4vw 1.3vw 0.4vw rgba(140, 255, 0, 0.5);
+  transform: translateY(-2px);
+}
+
+.ctaBtn span {
+  font-family: 'NEXON Lv2 Gothic', sans-serif;
+  font-weight: 700;
+  font-size: 2.34vw;
+  line-height: 2.66vw;
+  color: #101310;
+}
+
+.arrowLine {
+  width: 3vw;
+  height: 0.2vw;
+  background: #101310;
+  position: relative;
+}
+
+.arrowLine::after {
+  content: '';
+  position: absolute;
+  right: -0.1vw;
+  top: -0.3vw;
+  width: 0.73vw;
+  height: 0.73vw;
+  border-top: 0.2vw solid #101310;
+  border-right: 0.2vw solid #101310;
+  transform: rotate(45deg);
+}
+
+/* 펼쳐보기/접어두기 */
+.toggleSection {
+  margin: 9.8vw auto 0;
+  width: 27.1vw;
+}
+
+.toggleBtn {
+  width: 27.1vw;
+  height: 4.375vw;
+  border: 1px solid #FFFFFF;
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s;
+}
+
+.toggleBtn:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.toggleBtn span {
+  font-family: 'NEXON Lv2 Gothic', sans-serif;
+  font-weight: 400;
+  font-size: 1.56vw;
+  line-height: 3.125vw;
+  color: #FFFFFF;
+}
+
+/* ===== 펼쳐진 콘텐츠 ===== */
+.expandBg {
+  position: absolute;
+  width: 100%;
+  top: 230.6vw;
+  bottom: 0;
+  left: 0;
+  z-index: 8;
+  background: transparent;
+}
+
+
+.expandInner {
+  position: relative;
+  z-index: 10;
+  background: transparent;
+}
+
+/* K-TREE 구상나무 */
+.ktreeTitle {
+  position: absolute;
+  top: 249.6vw;
+  left: 50%;
+  z-index: 11;
+  transform: translateX(-50%);
+  margin: 0;
+  white-space: nowrap;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.875vw;
+  line-height: 4.375vw;
+  letter-spacing: 0;
+  color: #EBFFD1;
+}
+
+.ktreeTitleBold {
+  font-weight: 700;
+  font-size: 3.8vw;
+  line-height: 4.375vw;
+  letter-spacing: 0;
+}
+
+/* 구상나무 일러스트 (1920x640 클리핑 영역) */
+.treeIllustArea {
+  position: absolute;
+  width: 100vw;
+  height: 33.3vw;
+  z-index: 11;
+  top: 261.0vw;
+  left: 0;
+  overflow: hidden;
+  background: #101310;
+}
+
+.illustImg {
+  position: relative;
+  width: 84.3vw;
+  height: auto;
+  max-width: none;
+  display: block;
+  margin: -8.7vw auto 0;
+  object-fit: cover;
+  z-index: 1;
+}
+
+/* 나무 위 노이즈 오버레이 */
+.illustNoiseImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: luminosity;
+  opacity: 0.7;
+  z-index: 2;
+}
+
+
+/* 구상나무 설명 */
+.treeDesc {
+  width: 52.5vw;
+  height: 12.5vw;
+  margin: 57.76vw auto 0;
+  font-weight: 400;
+  font-size: 1.77vw;
+  line-height: 3.125vw;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+/* 수익 사용처 */
+.revenueText {
+  width: 58.6vw;
+  height: 6.67vw;
+  margin: 7.66vw auto 0;
+  font-weight: 700;
+  font-size: 2.08vw;
+  line-height: 3.33vw;
+  text-align: center;
+  color: #8CFF00;
+}
+
+/* 브랜드 섹션 */
+.brandSectionTitle {
+  width: 61.8vw;
+  height: 8.23vw;
+  margin: 17.24vw auto 0;
+  font-weight: 400;
+  font-size: 1.875vw;
+  line-height: 4.375vw;
+  text-align: center;
+  color: #EBFFD1;
+}
+
+.brandSectionTitleBold {
+  font-weight: 700;
+  font-size: 3.8vw;
+  line-height: 4.375vw;
+}
+
+.brandCards {
+  display: flex;
+  justify-content: center;
+  gap: 2.9vw;
+  margin-top: 6.3vw;
+}
+
+.brandCard {
+  width: 21vw;
+  height: 24.4vw;
+  background: rgba(235, 255, 209, 0.15);
+  border-radius: 0.52vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5vw;
+}
+
+.brandName {
+  font-weight: 700;
+  font-size: 2.08vw;
+  line-height: 3.125vw;
+  color: #8CFF00;
+}
+
+.brandDesc {
+  font-weight: 400;
+  font-size: 1.77vw;
+  line-height: 3.125vw;
+  text-align: center;
+  letter-spacing: -0.05em;
+  color: #FFFFFF;
+  margin-top: 1.9vw;
+  padding: 0 1.56vw;
+}
+
+
+/* 하단 CTA */
+.ctaBottomWrap {
+  display: flex;
+  justify-content: center;
+  padding: 17.24vw 0 10.4vw;
+}
+
+.ctaBottomWrap .ctaBtn {
+  margin: 0;
+}
+
+/* 스크롤 버튼 */
+.scrollBtns {
+  position: fixed;
+  right: 1.5vw;
+  bottom: 1.5vw;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625vw;
+  z-index: 100;
+}
+
+.scrollBtn {
+  width: 3.125vw;
+  height: 3.125vw;
+  border: 1px solid #FFFFFF;
+  border-radius: 0.52vw;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 3px 4px 4px -2px #818181;
+  transition: background 0.2s;
+}
+
+.scrollBtn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.scrollBtnDown svg {
+  transform: rotate(180deg);
+}
