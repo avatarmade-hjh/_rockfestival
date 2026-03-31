@@ -408,3 +408,137 @@
 .scrollBtnDown svg {
   transform: rotate(180deg);
 }
+
+/* ===== 모바일 (767px 이하) ===== */
+@media (max-width: 767px) {
+  .landing {
+    height: 399.5vw;
+  }
+
+  .landingExpanded {
+    height: 399.5vw;
+  }
+
+  /* 키비주얼 */
+  .headCopy {
+    width: 82.7vw;
+    height: 51.8vw;
+    margin-top: 29.3vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .kvImg {
+    max-width: 82.7vw;
+  }
+
+  /* 삼각형 이미지 */
+  .cardsSection {
+    width: 78.0vw;
+    margin: 37.9vw auto 0;
+  }
+
+  /* 메인 타이틀 */
+  .mainTitle {
+    margin-top: 4.8vw;
+    font-size: 8.5vw;
+    line-height: 10.8vw;
+  }
+
+  /* 서브 타이틀 */
+  .subTitles {
+    margin-top: 32.2vw;
+  }
+
+  .subTitleBold {
+    font-size: 4.2vw;
+    line-height: 5.0vw;
+  }
+
+  .subTitleLight {
+    font-size: 4.2vw;
+    line-height: 5.0vw;
+    margin-top: 1.7vw;
+  }
+
+  /* Rock Saves Trees */
+  .rockSavesTrees {
+    width: 82.3vw;
+    height: 7.6vw;
+    margin: 33.9vw auto 0;
+    font-size: 6.3vw;
+    line-height: 7.6vw;
+  }
+
+  /* Just Enjoy a Moment */
+  .enjoyMoment {
+    margin-top: 5.5vw;
+    font-size: 5.0vw;
+    line-height: 6.1vw;
+  }
+
+  /* 설명 텍스트 */
+  .descriptionText {
+    margin-top: 35.2vw;
+    font-size: 3.8vw;
+    line-height: 7.4vw;
+  }
+
+  /* CTA 버튼 */
+  .ctaBtn {
+    width: 80.2vw;
+    height: 13.3vw;
+    margin: 12.9vw auto 0;
+    border-radius: 8vw;
+  }
+
+  .ctaBtn span {
+    font-size: 4.7vw;
+    line-height: 5.3vw;
+  }
+
+  .arrowLine {
+    width: 6vw;
+    height: 0.4vw;
+  }
+
+  .arrowLine::after {
+    width: 1.5vw;
+    height: 1.5vw;
+    border-top: 0.4vw solid #101310;
+    border-right: 0.4vw solid #101310;
+  }
+
+  /* 배경 이미지 - 1473x3592, 왼쪽 -246px, 위 -390px */
+  .bgImage {
+    width: 192.0vw;
+    height: 468.3vw;
+    left: -32.1vw;
+    top: -50.8vw;
+  }
+
+  /* 펼쳐보기 버튼 숨기기 */
+  .toggleSection {
+    display: none;
+  }
+
+  /* 펼친 콘텐츠 숨기기 */
+  .expandBg,
+  .ktreeTitle,
+  .treeIllustArea,
+  .expandInner {
+    display: none;
+  }
+
+  /* 스크롤 버튼 */
+  .scrollBtns {
+    right: 3vw;
+    bottom: 3vw;
+  }
+
+  .scrollBtn {
+    width: 8vw;
+    height: 8vw;
+    border-radius: 1.5vw;
+  }
+}
